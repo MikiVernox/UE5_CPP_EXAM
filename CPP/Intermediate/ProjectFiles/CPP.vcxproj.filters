@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\CPP.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CPP.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\CPPEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.editorconfig" />
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\CPP">
+      <UniqueIdentifier>{031B796E-59E1-3CD9-BCB1-BBDE3BBF9837}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CPP\BattleRifle.cpp">
+      <Filter>Source\CPP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CPP\BattleRifle.h">
+      <Filter>Source\CPP</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\CPP\CPP.Build.cs">
+      <Filter>Source\CPP</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\CPP\CPP.cpp">
+      <Filter>Source\CPP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CPP\CPP.h">
+      <Filter>Source\CPP</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CPP\MyCharacter.cpp">
+      <Filter>Source\CPP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CPP\MyCharacter.h">
+      <Filter>Source\CPP</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CPP\MyGameModeBase.cpp">
+      <Filter>Source\CPP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CPP\MyGameModeBase.h">
+      <Filter>Source\CPP</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
