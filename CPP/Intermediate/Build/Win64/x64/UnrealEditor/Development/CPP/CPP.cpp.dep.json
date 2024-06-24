@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\vernox\\ue_cpp_exam\\cpp\\source\\cpp\\cpp.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\vernox\\ue_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\cppeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\vernox\\ue_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cpp\\definitions.cpp.h",
+            "c:\\users\\vernox\\ue_cpp_exam\\cpp\\source\\cpp\\cpp.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
