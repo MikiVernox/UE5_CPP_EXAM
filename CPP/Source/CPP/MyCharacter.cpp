@@ -180,35 +180,38 @@ void AMyCharacter::BurstFire()
 }
 
 
-void AMyCharacter::ActivateCamouflage(UMaterialInterface* CamouflageMat, float Duration)
+
+
+void AMyCharacter::SetCamouflaged(bool bIsCamouflaged, UMaterialInterface* NewMaterial, float Duration)
 {
-    if (CamouflageMat && !CamouflageMaterial)
+    if (bIsCamouflaged)
     {
-        CamouflageMaterial = UMaterialInstanceDynamic::Create(CamouflageMat, this);
-    }
-
-    if (CamouflageMaterial)
-    {
-        int32 NumMaterials = GetMesh()->GetNumMaterials();
-        for (int32 i = 0; i < NumMaterials; ++i)
+        if (!bCamouflaged)
         {
-            GetMesh()->SetMaterial(i, CamouflageMaterial);
-        }
+            OriginalMaterial = GetMesh()->GetMaterial(0); // Store original material
+            GetMesh()->SetMaterial(0, NewMaterial); // Set camouflage material
+            bCamouflaged = true;
 
-        GetWorldTimerManager().SetTimer(CamouflageTimerHandle, this, &AMyCharacter::DeactivateCamouflage, Duration, false);
+            // Set a timer to reset camouflage
+            GetWorld()->GetTimerManager().SetTimer(CamouflageTimerHandle, this, &AMyCharacter::ResetCamouflage, Duration, false);
+        }
+    }
+    else
+    {
+        ResetCamouflage();
     }
 }
 
-void AMyCharacter::DeactivateCamouflage()
+void AMyCharacter::ResetCamouflage()
 {
-    int32 NumMaterials = GetMesh()->GetNumMaterials();
-    for (int32 i = 0; i < NumMaterials; ++i)
+    if (bCamouflaged)
     {
-        if (OriginalMaterials.IsValidIndex(i))
-        {
-            GetMesh()->SetMaterial(i, OriginalMaterials[i]);
-        }
+        GetMesh()->SetMaterial(0, OriginalMaterial); // Reset to original material
+        bCamouflaged = false;
     }
+}
 
-
+bool AMyCharacter::IsCamouflaged() const
+{
+    return bCamouflaged;
 }

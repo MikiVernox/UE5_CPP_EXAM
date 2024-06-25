@@ -141,13 +141,13 @@ void EmptyLinkFunctionForGeneratedCodeCamouflagePowerUp() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_CollisionComponent;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_CamouflageMaterial_MetaData[];
-#endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_CamouflageMaterial;
-#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_CamouflageDuration_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_CamouflageDuration;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CamouflageMaterial_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_CamouflageMaterial;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -176,23 +176,23 @@ void EmptyLinkFunctionForGeneratedCodeCamouflagePowerUp() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CollisionComponent = { "CollisionComponent", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACamouflagePowerUp, CollisionComponent), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CollisionComponent_MetaData), Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CollisionComponent_MetaData) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageMaterial_MetaData[] = {
-		{ "Category", "Camouflage" },
-		{ "ModuleRelativePath", "CamouflagePowerUp.h" },
-	};
-#endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageMaterial = { "CamouflageMaterial", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACamouflagePowerUp, CamouflageMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageMaterial_MetaData), Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageMaterial_MetaData) };
-#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageDuration_MetaData[] = {
 		{ "Category", "Camouflage" },
 		{ "ModuleRelativePath", "CamouflagePowerUp.h" },
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageDuration = { "CamouflageDuration", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACamouflagePowerUp, CamouflageDuration), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageDuration_MetaData), Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageDuration_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageMaterial_MetaData[] = {
+		{ "Category", "Camouflage" },
+		{ "ModuleRelativePath", "CamouflagePowerUp.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageMaterial = { "CamouflageMaterial", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACamouflagePowerUp, CamouflageMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageMaterial_MetaData), Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageMaterial_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACamouflagePowerUp_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CollisionComponent,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageMaterial,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageDuration,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACamouflagePowerUp_Statics::NewProp_CamouflageMaterial,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ACamouflagePowerUp_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ACamouflagePowerUp>::IsAbstract,
@@ -232,9 +232,9 @@ void EmptyLinkFunctionForGeneratedCodeCamouflagePowerUp() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CPP_Source_CPP_CamouflagePowerUp_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ACamouflagePowerUp, ACamouflagePowerUp::StaticClass, TEXT("ACamouflagePowerUp"), &Z_Registration_Info_UClass_ACamouflagePowerUp, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACamouflagePowerUp), 891795516U) },
+		{ Z_Construct_UClass_ACamouflagePowerUp, ACamouflagePowerUp::StaticClass, TEXT("ACamouflagePowerUp"), &Z_Registration_Info_UClass_ACamouflagePowerUp, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACamouflagePowerUp), 3462823983U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CPP_Source_CPP_CamouflagePowerUp_h_2076945586(TEXT("/Script/CPP"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CPP_Source_CPP_CamouflagePowerUp_h_684403638(TEXT("/Script/CPP"),
 		Z_CompiledInDeferFile_FID_CPP_Source_CPP_CamouflagePowerUp_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CPP_Source_CPP_CamouflagePowerUp_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

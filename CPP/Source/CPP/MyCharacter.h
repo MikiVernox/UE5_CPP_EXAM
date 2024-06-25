@@ -39,11 +39,11 @@ public:
 	void StartFire();
 	void StopFire();
 
-	// Function to activate camouflage
-	void ActivateCamouflage(UMaterialInterface* CamouflageMat, float Duration);
+	void SetCamouflaged(bool bIsCamouflaged, UMaterialInterface* NewMaterial, float Duration);
 
-	// Function to deactivate camouflage
-	void DeactivateCamouflage();
+	bool IsCamouflaged() const;
+
+	
 
 	// New components for camera
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
@@ -63,13 +63,11 @@ private:
 	// Array to store the original materials
 	TArray<UMaterialInterface*> OriginalMaterials;
 
-	// The dynamic instance of the camouflage material
-	UPROPERTY()
-	UMaterialInstanceDynamic* CamouflageMaterial;
-
-	// Timer handle for the camouflage duration
+	bool bCamouflaged;
+	UMaterialInterface* OriginalMaterial;
 	FTimerHandle CamouflageTimerHandle;
 
+	void ResetCamouflage();
 
 
 	bool bIsSprinting;

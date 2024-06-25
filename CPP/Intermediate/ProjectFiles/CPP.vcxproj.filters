@@ -37,6 +37,12 @@
     <ClInclude Include="..\..\Source\CPP\BattleRifle.h">
       <Filter>Source\CPP</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\CPP\Block.cpp">
+      <Filter>Source\CPP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CPP\Block.h">
+      <Filter>Source\CPP</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\CPP\CamouflagePowerUp.cpp">
       <Filter>Source\CPP</Filter>
     </ClCompile>
@@ -52,6 +58,12 @@
     <ClInclude Include="..\..\Source\CPP\CPP.h">
       <Filter>Source\CPP</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\CPP\Door.cpp">
+      <Filter>Source\CPP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CPP\Door.h">
+      <Filter>Source\CPP</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\CPP\MyCharacter.cpp">
       <Filter>Source\CPP</Filter>
     </ClCompile>
@@ -62,6 +74,18 @@
       <Filter>Source\CPP</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\CPP\MyGameModeBase.h">
+      <Filter>Source\CPP</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CPP\Obstacle.cpp">
+      <Filter>Source\CPP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CPP\Obstacle.h">
+      <Filter>Source\CPP</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CPP\PressurePlate.cpp">
+      <Filter>Source\CPP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CPP\PressurePlate.h">
       <Filter>Source\CPP</Filter>
     </ClInclude>
   </ItemGroup>

@@ -22,7 +22,7 @@ ACamouflagePowerUp::ACamouflagePowerUp()
 
     // Set default values
     CamouflageDuration = 10.0f;
-
+    CamouflageMaterial = nullptr; // Assign your camouflage material here
 }
 
 // Called when the game starts or when spawned
@@ -43,7 +43,7 @@ void ACamouflagePowerUp::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 {
     if (AMyCharacter* Character = Cast<AMyCharacter>(OtherActor))
     {
-        Character->ActivateCamouflage(CamouflageMaterial, CamouflageDuration);
+        Character->SetCamouflaged(true, CamouflageMaterial, CamouflageDuration);
         Destroy();
     }
 }
