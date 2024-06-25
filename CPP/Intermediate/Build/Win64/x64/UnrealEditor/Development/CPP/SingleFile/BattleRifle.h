@@ -1,1 +1,0 @@
-#include "C:/Users/Vernox/UE_CPP_EXAM/CPP/Source/CPP/BattleRifle.h"

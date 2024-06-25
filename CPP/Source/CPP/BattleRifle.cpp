@@ -39,7 +39,7 @@ void ABattleRifle::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* O
         AMyCharacter* MyCharacter = Cast<AMyCharacter>(OtherActor);
         if (MyCharacter)
         {
-            UE_LOG(LogTemp, Warning, TEXT("Weapon Overlapped with Character"));
+            //UE_LOG(LogTemp, Warning, TEXT("Weapon Overlapped with Character"));
             MyCharacter->EquipWeapon(this);
             
             

@@ -19,7 +19,7 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -39,6 +39,11 @@ public:
 	void StartFire();
 	void StopFire();
 
+	// Function to activate camouflage
+	void ActivateCamouflage(UMaterialInterface* CamouflageMat, float Duration);
+
+	// Function to deactivate camouflage
+	void DeactivateCamouflage();
 
 	// New components for camera
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
@@ -48,12 +53,25 @@ public:
 	class UCameraComponent* FollowCamera;
 
 
-	
+
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	TSubclassOf<class ABattleRifle> BattleRifleClass;
 
 private:
+
+	// Array to store the original materials
+	TArray<UMaterialInterface*> OriginalMaterials;
+
+	// The dynamic instance of the camouflage material
+	UPROPERTY()
+	UMaterialInstanceDynamic* CamouflageMaterial;
+
+	// Timer handle for the camouflage duration
+	FTimerHandle CamouflageTimerHandle;
+
+
+
 	bool bIsSprinting;
 	float SprintMultiplier;
 

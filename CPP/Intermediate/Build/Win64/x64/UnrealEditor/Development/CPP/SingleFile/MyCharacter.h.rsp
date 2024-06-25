@@ -1,8 +1,8 @@
-"C:\Users\Vernox\UE_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\SingleFile\MyCharacter.h"
-/FI"C:\Users\Vernox\UE_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\Definitions.CPP.h"
-/Fo"C:\Users\Vernox\UE_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\SingleFile\MyCharacter.h.obj"
-/sourceDependencies "C:\Users\Vernox\UE_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\SingleFile\MyCharacter.h.dep.json"
-@"C:\Users\Vernox\UE_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\CPP.Shared.rsp"
+"C:\Users\Vernox\Documents\GitHub\UE5_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\SingleFile\MyCharacter.h"
+/FI"C:\Users\Vernox\Documents\GitHub\UE5_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\Definitions.CPP.h"
+/Fo"C:\Users\Vernox\Documents\GitHub\UE5_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\SingleFile\MyCharacter.h.obj"
+/sourceDependencies "C:\Users\Vernox\Documents\GitHub\UE5_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\SingleFile\MyCharacter.h.dep.json"
+@"C:\Users\Vernox\Documents\GitHub\UE5_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\CPP.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi

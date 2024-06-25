@@ -1,11 +1,11 @@
-"C:\Users\Vernox\UE_CPP_EXAM\CPP\Source\CPP\MyCharacter.cpp"
-/FI"C:\Users\Vernox\UE_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\CPPEditor\Development\Engine\SharedPCH.Engine.Cpp20.h"
-/FI"C:\Users\Vernox\UE_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\Definitions.CPP.h"
-/Yu"C:\Users\Vernox\UE_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\CPPEditor\Development\Engine\SharedPCH.Engine.Cpp20.h"
-/Fp"C:\Users\Vernox\UE_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\CPPEditor\Development\Engine\SharedPCH.Engine.Cpp20.h.pch"
-/Fo"C:\Users\Vernox\UE_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\MyCharacter.cpp.obj"
-/sourceDependencies "C:\Users\Vernox\UE_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\MyCharacter.cpp.dep.json"
-@"C:\Users\Vernox\UE_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\CPP.Shared.rsp"
+"C:\Users\Vernox\Documents\GitHub\UE5_CPP_EXAM\CPP\Source\CPP\MyCharacter.cpp"
+/FI"C:\Users\Vernox\Documents\GitHub\UE5_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\CPPEditor\Development\Engine\SharedPCH.Engine.Cpp20.h"
+/FI"C:\Users\Vernox\Documents\GitHub\UE5_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\Definitions.CPP.h"
+/Yu"C:\Users\Vernox\Documents\GitHub\UE5_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\CPPEditor\Development\Engine\SharedPCH.Engine.Cpp20.h"
+/Fp"C:\Users\Vernox\Documents\GitHub\UE5_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\CPPEditor\Development\Engine\SharedPCH.Engine.Cpp20.h.pch"
+/Fo"C:\Users\Vernox\Documents\GitHub\UE5_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\MyCharacter.cpp.obj"
+/sourceDependencies "C:\Users\Vernox\Documents\GitHub\UE5_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\MyCharacter.cpp.dep.json"
+@"C:\Users\Vernox\Documents\GitHub\UE5_CPP_EXAM\CPP\Intermediate\Build\Win64\x64\UnrealEditor\Development\CPP\CPP.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi

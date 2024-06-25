@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RKWgdQ2fuLc=",
+  "dgSpecHash": "nlKSC/V+WGo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vernox\\UE_CPP_EXAM\\CPP\\Intermediate\\Build\\BuildRulesProjects\\CPPModuleRules\\CPPModuleRules.csproj",
+  "projectFilePath": "C:\\Users\\Vernox\\Documents\\GitHub\\UE5_CPP_EXAM\\CPP\\Intermediate\\Build\\BuildRulesProjects\\CPPModuleRules\\CPPModuleRules.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vernox\\.nuget\\packages\\blake3\\0.5.1\\blake3.0.5.1.nupkg.sha512",
     "C:\\Users\\Vernox\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",

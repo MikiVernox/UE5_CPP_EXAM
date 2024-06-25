@@ -37,6 +37,12 @@
     <ClInclude Include="..\..\Source\CPP\BattleRifle.h">
       <Filter>Source\CPP</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\CPP\CamouflagePowerUp.cpp">
+      <Filter>Source\CPP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CPP\CamouflagePowerUp.h">
+      <Filter>Source\CPP</Filter>
+    </ClInclude>
     <None Include="..\..\Source\CPP\CPP.Build.cs">
       <Filter>Source\CPP</Filter>
     </None>

@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\vernox\\ue_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cpp\\singlefile\\mycharacter.h",
+        "Source": "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cpp\\singlefile\\mycharacter.h",
         "ProvidedModule": "",
         "Includes": [
-            "c:\\users\\vernox\\ue_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cpp\\definitions.cpp.h",
-            "c:\\users\\vernox\\ue_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\cppeditor\\development\\engine\\shareddefinitions.engine.cpp20.h",
-            "c:\\users\\vernox\\ue_cpp_exam\\cpp\\source\\cpp\\mycharacter.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cpp\\definitions.cpp.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\cppeditor\\development\\engine\\shareddefinitions.engine.cpp20.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\source\\cpp\\mycharacter.h",
             "f:\\ue_5.3\\engine\\source\\runtime\\core\\public\\coreminimal.h",
             "f:\\ue_5.3\\engine\\source\\runtime\\core\\public\\coretypes.h",
             "f:\\ue_5.3\\engine\\source\\runtime\\core\\public\\hal\\platform.h",
@@ -609,7 +609,7 @@
             "f:\\ue_5.3\\engine\\source\\runtime\\core\\public\\features\\imodularfeature.h",
             "f:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
             "f:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
-            "c:\\users\\vernox\\ue_cpp_exam\\cpp\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp\\uht\\mycharacter.generated.h"
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp\\uht\\mycharacter.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

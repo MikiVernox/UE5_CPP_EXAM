@@ -5,6 +5,10 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/Vernox/Documents/GitHub/UE5_CPP_EXAM/CPP/Content/PoweUP/BP_CamouflagePowerUp.uasset",
+				"C:/Users/Vernox/Documents/GitHub/UE5_CPP_EXAM/CPP/Content/PoweUP/bitmaps/powerup_noise_2.uasset",
+				"C:/Users/Vernox/Documents/GitHub/UE5_CPP_EXAM/CPP/Content/PoweUP/bitmaps/powerup_noise_1.uasset",
+				"C:/Users/Vernox/Documents/GitHub/UE5_CPP_EXAM/CPP/Content/PoweUP/bitmaps/M_Camouflage.uasset",
 				"C:/Users/Vernox/UE_CPP_EXAM/CPP/Content/Player/BP_MyCharacter.uasset",
 				"C:/Users/Vernox/UE_CPP_EXAM/CPP/Content/ThirdPerson/Maps/ThirdPersonMap_BuiltData.uasset",
 				"C:/Users/Vernox/UE_CPP_EXAM/CPP/Content/Player/Skin/textures/Arms.uasset",

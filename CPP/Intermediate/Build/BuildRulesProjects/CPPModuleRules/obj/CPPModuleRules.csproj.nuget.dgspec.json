@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vernox\\UE_CPP_EXAM\\CPP\\Intermediate\\Build\\BuildRulesProjects\\CPPModuleRules\\CPPModuleRules.csproj": {}
+    "C:\\Users\\Vernox\\Documents\\GitHub\\UE5_CPP_EXAM\\CPP\\Intermediate\\Build\\BuildRulesProjects\\CPPModuleRules\\CPPModuleRules.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vernox\\UE_CPP_EXAM\\CPP\\Intermediate\\Build\\BuildRulesProjects\\CPPModuleRules\\CPPModuleRules.csproj": {
+    "C:\\Users\\Vernox\\Documents\\GitHub\\UE5_CPP_EXAM\\CPP\\Intermediate\\Build\\BuildRulesProjects\\CPPModuleRules\\CPPModuleRules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vernox\\UE_CPP_EXAM\\CPP\\Intermediate\\Build\\BuildRulesProjects\\CPPModuleRules\\CPPModuleRules.csproj",
+        "projectUniqueName": "C:\\Users\\Vernox\\Documents\\GitHub\\UE5_CPP_EXAM\\CPP\\Intermediate\\Build\\BuildRulesProjects\\CPPModuleRules\\CPPModuleRules.csproj",
         "projectName": "CPPModuleRules",
-        "projectPath": "C:\\Users\\Vernox\\UE_CPP_EXAM\\CPP\\Intermediate\\Build\\BuildRulesProjects\\CPPModuleRules\\CPPModuleRules.csproj",
+        "projectPath": "C:\\Users\\Vernox\\Documents\\GitHub\\UE5_CPP_EXAM\\CPP\\Intermediate\\Build\\BuildRulesProjects\\CPPModuleRules\\CPPModuleRules.csproj",
         "packagesPath": "C:\\Users\\Vernox\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vernox\\UE_CPP_EXAM\\CPP\\Intermediate\\Build\\BuildRulesProjects\\CPPModuleRules\\obj\\",
+        "outputPath": "C:\\Users\\Vernox\\Documents\\GitHub\\UE5_CPP_EXAM\\CPP\\Intermediate\\Build\\BuildRulesProjects\\CPPModuleRules\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
