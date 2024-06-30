@@ -50,8 +50,16 @@ void AObstacle::AllowPassage(AActor* Character)
         if (MyCharacter->IsCamouflaged())
         {
             ObstacleMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-            ObstacleMesh->SetVisibility(false);
+            //ObstacleMesh->SetVisibility(false);
         }
     }
     
+}
+
+void AObstacle::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+    if (AMyCharacter* Character = Cast<AMyCharacter>(OtherActor))
+    {
+        ObstacleMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+    }
 }

@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\source\\cpp\\npdoor.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\cppeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cpp\\definitions.cpp.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\source\\cpp\\npdoor.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp\\uht\\npdoor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

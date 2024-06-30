@@ -32,7 +32,7 @@ public:
 	void StopJump();
 	void StartSprint();
 	void StopSprint();
-
+	void Interact();
 
 	void EquipWeapon(class ABattleRifle* Weapon);
 
@@ -78,4 +78,6 @@ private:
 	FTimerHandle BurstTimerHandle;
 
 	void BurstFire();
+
+
 };

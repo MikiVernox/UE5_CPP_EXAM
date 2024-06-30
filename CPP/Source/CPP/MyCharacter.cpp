@@ -3,12 +3,15 @@
 
 #include "MyCharacter.h"
 #include "BattleRifle.h"
+#include "NumPad.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "TimerManager.h"
+#include "Blueprint/UserWidget.h"
+#include "NumpadWidget.h"
 
 // Sets default values
 AMyCharacter::AMyCharacter()
@@ -77,6 +80,8 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
     // Weapon controls
     PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AMyCharacter::StartFire);
     PlayerInputComponent->BindAction("Fire", IE_Released, this, &AMyCharacter::StopFire);
+
+    PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &AMyCharacter::Interact);
 }
 
 void AMyCharacter::MoveForward(float Value)
@@ -170,7 +175,7 @@ void AMyCharacter::BurstFire()
             // Process hit actor
             if (AActor* HitActor = Hit.GetActor())
             {
-                // Apply damage or any other logic
+                // Apply damage
             }
         }
     }
@@ -214,4 +219,26 @@ void AMyCharacter::ResetCamouflage()
 bool AMyCharacter::IsCamouflaged() const
 {
     return bCamouflaged;
+}
+
+void AMyCharacter::Interact()
+{
+    FHitResult HitResult;
+    FVector Start = FollowCamera->GetComponentLocation();
+    FVector End = Start + (FollowCamera->GetForwardVector() * 1000.0f);
+
+    FCollisionQueryParams Params;
+    Params.AddIgnoredActor(this);
+
+    if (GetWorld()->LineTraceSingleByChannel(HitResult, Start, End, ECC_Visibility, Params))
+    {
+        if (HitResult.GetActor())
+        {
+            ANumPad* Numpad = Cast<ANumPad>(HitResult.GetActor());
+            if (Numpad)
+            {
+                Numpad->ShowNumpadUI();
+            }
+        }
+    }
 }

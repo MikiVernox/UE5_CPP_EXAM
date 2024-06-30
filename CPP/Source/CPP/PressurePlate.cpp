@@ -42,12 +42,12 @@ void APressurePlate::Tick(float DeltaTime)
     if (bBlockOnPlate)
     {
         // Open door logic
-        UE_LOG(LogTemp, Warning, TEXT("Block is on the plate. Open the door."));
+        //UE_LOG(LogTemp, Warning, TEXT("Block is on the plate. Open the door."));
     }
     else
     {
         // Close door logic
-        UE_LOG(LogTemp, Warning, TEXT("Block is not on the plate. Close the door."));
+        //UE_LOG(LogTemp, Warning, TEXT("Block is not on the plate. Close the door."));
     }
 
     if (bBlockOnPlate)
