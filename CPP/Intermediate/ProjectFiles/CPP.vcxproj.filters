@@ -49,18 +49,6 @@
     <ClInclude Include="..\..\Source\CPP\CamouflagePowerUp.h">
       <Filter>Source\CPP</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\CPP\CollectibleInterface.cpp">
-      <Filter>Source\CPP</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\CPP\CollectibleInterface.h">
-      <Filter>Source\CPP</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\CPP\CollectibleItem.cpp">
-      <Filter>Source\CPP</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\CPP\CollectibleItem.h">
-      <Filter>Source\CPP</Filter>
-    </ClInclude>
     <None Include="..\..\Source\CPP\CPP.Build.cs">
       <Filter>Source\CPP</Filter>
     </None>
@@ -74,6 +62,12 @@
       <Filter>Source\CPP</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\CPP\Door.h">
+      <Filter>Source\CPP</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CPP\MovingPlatform.cpp">
+      <Filter>Source\CPP</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CPP\MovingPlatform.h">
       <Filter>Source\CPP</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\CPP\MyCharacter.cpp">
