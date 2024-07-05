@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp\\uht\\audiotriggerbox.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\cppeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cpp\\definitions.cpp.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\source\\cpp\\audiotriggerbox.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\triggerbox.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\triggerbase.h",
+            "f:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\triggerbase.generated.h",
+            "f:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\triggerbox.generated.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp\\uht\\audiotriggerbox.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

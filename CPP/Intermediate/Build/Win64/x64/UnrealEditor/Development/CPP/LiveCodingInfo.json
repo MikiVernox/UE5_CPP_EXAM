@@ -1,5 +1,39 @@
 {
 	"RemapUnityFiles": 
 	{
+		"Module.CPP.cpp.obj": [
+			"BattleRifle.gen.cpp.obj",
+			"Block.gen.cpp.obj",
+			"CamouflagePowerUp.gen.cpp.obj",
+			"Door.gen.cpp.obj",
+			"MovingPlatform.gen.cpp.obj",
+			"MyGameModeBase.gen.cpp.obj",
+			"NPDoor.gen.cpp.obj",
+			"NumPad.gen.cpp.obj",
+			"NumpadWidget.gen.cpp.obj",
+			"Obstacle.gen.cpp.obj",
+			"PressurePlate.gen.cpp.obj",
+			"BattleRifle.cpp.obj",
+			"Block.cpp.obj",
+			"CamouflagePowerUp.cpp.obj",
+			"CPP.cpp.obj",
+			"Door.cpp.obj",
+			"MovingPlatform.cpp.obj",
+			"MyGameModeBase.cpp.obj",
+			"NPDoor.cpp.obj",
+			"NumpadWidget.cpp.obj",
+			"Obstacle.cpp.obj",
+			"PressurePlate.cpp.obj",
+			"Checkpoint.gen.cpp.obj",
+			"CollectableItem.gen.cpp.obj",
+			"CPP.init.gen.cpp.obj",
+			"InterfaceCollectables.gen.cpp.obj",
+			"MyCharacter.gen.cpp.obj",
+			"Checkpoint.cpp.obj",
+			"CollectableItem.cpp.obj",
+			"InterfaceCollectables.cpp.obj",
+			"MyCharacter.cpp.obj",
+			"NumPad.cpp.obj"
+		]
 	}
 }

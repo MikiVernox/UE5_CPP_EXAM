@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "InterfaceCollectables.h"
 #include "MyCharacter.generated.h"
 
 UCLASS()
-class CPP_API AMyCharacter : public ACharacter
+class CPP_API AMyCharacter : public ACharacter, public IInterfaceCollectables
 {
 	GENERATED_BODY()
 
@@ -58,6 +59,14 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combat")
 	TSubclassOf<class ABattleRifle> BattleRifleClass;
 
+	virtual void OnCollected() override;
+
+	// Function to set the last checkpoint location
+	void SetLastCheckpointLocation(FVector NewCheckpointLocation);
+
+	// Function to respawn the character
+	void RespawnAtCheckpoint();
+
 private:
 
 	// Array to store the original materials
@@ -79,5 +88,5 @@ private:
 
 	void BurstFire();
 
-
+	FVector LastCheckpointLocation;
 };

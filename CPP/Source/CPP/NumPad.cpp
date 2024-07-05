@@ -91,6 +91,7 @@ void ANumPad::EnterCode(const FString& Code)
 	}
 	else
 	{
+		
 		UE_LOG(LogTemp, Warning, TEXT("Incorrect Code Entered."));
 	}
 }

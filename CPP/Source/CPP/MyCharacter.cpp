@@ -26,17 +26,19 @@ AMyCharacter::AMyCharacter()
     // Create a camera boom (pulls in towards the player if there is a collision)
     CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
     CameraBoom->SetupAttachment(RootComponent);
-    CameraBoom->TargetArmLength = 300.0f; // The camera follows at this distance behind the character
-    CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
+    CameraBoom->TargetArmLength = 300.0f; 
+    CameraBoom->bUsePawnControlRotation = true; 
 
     // Create a follow camera
     FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
-    FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom
-    FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
+    FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); 
+    FollowCamera->bUsePawnControlRotation = false; 
 
 
-    GetCharacterMovement()->MaxWalkSpeed = 600.0f; // Default walking speed
-    GetCharacterMovement()->MaxAcceleration = 2048.0f; // Default acceleration
+    GetCharacterMovement()->MaxWalkSpeed = 600.0f; 
+    GetCharacterMovement()->MaxAcceleration = 2048.0f; 
+
+    LastCheckpointLocation = FVector::ZeroVector;
 }
 
 // Called when the game starts or when spawned
@@ -59,6 +61,10 @@ void AMyCharacter::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
 
+    if (GetActorLocation().Z < -1000)
+    {
+        RespawnAtCheckpoint();
+    }
 }
 
 // Called to bind functionality to input
@@ -131,14 +137,14 @@ void AMyCharacter::EquipWeapon(class ABattleRifle* Weapon)
 {
     if (Weapon)
     {
-        //UE_LOG(LogTemp, Warning, TEXT("Equipping Weapon"));
+        
         EquippedWeapon = Weapon;
         FAttachmentTransformRules AttachmentRules(EAttachmentRule::SnapToTarget, true);
         Weapon->AttachToComponent(GetMesh(), AttachmentRules, TEXT("WeaponSocket"));
         Weapon->SetOwner(this);
         Weapon->SetActorHiddenInGame(false);
         Weapon->SetActorEnableCollision(false); // Disable collision once equipped
-        //UE_LOG(LogTemp, Warning, TEXT("Weapon Attached to: %s"), *Weapon->GetName());
+        
     }
 }
 
@@ -172,7 +178,7 @@ void AMyCharacter::BurstFire()
     {
         if (Hit.bBlockingHit)
         {
-            // Process hit actor
+            
             if (AActor* HitActor = Hit.GetActor())
             {
                 // Apply damage
@@ -197,7 +203,7 @@ void AMyCharacter::SetCamouflaged(bool bIsCamouflaged, UMaterialInterface* NewMa
             GetMesh()->SetMaterial(0, NewMaterial); // Set camouflage material
             bCamouflaged = true;
 
-            // Set a timer to reset camouflage
+            // Timer to reset camouflage
             GetWorld()->GetTimerManager().SetTimer(CamouflageTimerHandle, this, &AMyCharacter::ResetCamouflage, Duration, false);
         }
     }
@@ -207,11 +213,16 @@ void AMyCharacter::SetCamouflaged(bool bIsCamouflaged, UMaterialInterface* NewMa
     }
 }
 
+void AMyCharacter::OnCollected()
+{
+    UE_LOG(LogTemp, Warning, TEXT("PRESO OGETTO"));
+}
+
 void AMyCharacter::ResetCamouflage()
 {
     if (bCamouflaged)
     {
-        GetMesh()->SetMaterial(0, OriginalMaterial); // Reset to original material
+        GetMesh()->SetMaterial(0, OriginalMaterial);
         bCamouflaged = false;
     }
 }
@@ -241,4 +252,15 @@ void AMyCharacter::Interact()
             }
         }
     }
+}
+
+void AMyCharacter::SetLastCheckpointLocation(FVector NewCheckpointLocation)
+{
+    LastCheckpointLocation = NewCheckpointLocation;
+}
+
+void AMyCharacter::RespawnAtCheckpoint()
+{
+    SetActorLocation(LastCheckpointLocation);
+    UE_LOG(LogTemp, Warning, TEXT("Respawned at checkpoint: %s"), *LastCheckpointLocation.ToString());
 }

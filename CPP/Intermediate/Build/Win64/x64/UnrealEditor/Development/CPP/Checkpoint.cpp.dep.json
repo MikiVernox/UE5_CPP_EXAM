@@ -1,0 +1,31 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\source\\cpp\\checkpoint.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\cppeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cpp\\definitions.cpp.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\source\\cpp\\checkpoint.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp\\uht\\checkpoint.generated.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "f:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "f:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\boxcomponent.generated.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\source\\cpp\\mycharacter.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "f:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "f:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "f:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "f:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\source\\cpp\\interfacecollectables.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp\\uht\\interfacecollectables.generated.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp\\uht\\mycharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\source\\cpp\\collectableitem.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\cppeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cpp\\definitions.cpp.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\source\\cpp\\collectableitem.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp\\uht\\collectableitem.generated.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "f:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "f:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\boxcomponent.generated.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\components\\audiocomponent.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\engine\\public\\audio\\soundparametercontrollerinterface.h",
+            "f:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\soundparametercontrollerinterface.generated.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\audioextensions\\public\\iaudioparametertransmitter.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\audiomixer\\public\\quartz\\audiomixerquantizedcommands.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\audiomixer\\public\\quartz\\audiomixerclock.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\audiomixer\\public\\quartz\\quartzmetronome.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\sound\\quartzsubscription.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\sound\\quartzsubscriptiontoken.h",
+            "f:\\ue_5.3\\engine\\source\\runtime\\core\\public\\containers\\consumeallmpmcqueue.h",
+            "f:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\audiocomponent.generated.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\source\\cpp\\interfacecollectables.h",
+            "c:\\users\\vernox\\documents\\github\\ue5_cpp_exam\\cpp\\intermediate\\build\\win64\\unrealeditor\\inc\\cpp\\uht\\interfacecollectables.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
