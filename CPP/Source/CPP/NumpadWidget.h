@@ -18,8 +18,6 @@ class CPP_API UNumpadWidget : public UUserWidget
 public:
     virtual void NativeConstruct() override;
 
-    //UFUNCTION()
-    //void OnButtonClicked();
 
     void SetOwnerNumPad(ANumPad* Owner);
 

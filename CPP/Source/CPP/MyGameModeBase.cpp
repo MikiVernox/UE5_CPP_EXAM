@@ -14,7 +14,7 @@ AMyGameModeBase::AMyGameModeBase()
         DefaultPawnClass = PlayerPawnBPClass.Class;
     }
 
-    // Default spawn location and rotation
+   
     SpawnLocation = FVector(0.0f, 0.0f, 500.0f);
     SpawnRotation = FRotator(0.0f, 0.0f, 0.0f);
 }

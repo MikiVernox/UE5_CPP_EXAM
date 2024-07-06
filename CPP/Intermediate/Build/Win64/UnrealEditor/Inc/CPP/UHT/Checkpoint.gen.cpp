@@ -110,13 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeCheckpoint() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACheckpoint_OnOverlapBegin_Statics::Function_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "// Function to handle checkpoint activation\n" },
-#endif
 		{ "ModuleRelativePath", "Checkpoint.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Function to handle checkpoint activation" },
-#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACheckpoint_OnOverlapBegin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACheckpoint, nullptr, "OnOverlapBegin", nullptr, nullptr, Z_Construct_UFunction_ACheckpoint_OnOverlapBegin_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ACheckpoint_OnOverlapBegin_Statics::PropPointers), sizeof(Z_Construct_UFunction_ACheckpoint_OnOverlapBegin_Statics::Checkpoint_eventOnOverlapBegin_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACheckpoint_OnOverlapBegin_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACheckpoint_OnOverlapBegin_Statics::Function_MetaDataParams) };
@@ -169,7 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeCheckpoint() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACheckpoint_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACheckpoint_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ACheckpoint_OnOverlapBegin, "OnOverlapBegin" }, // 3450212715
+		{ &Z_Construct_UFunction_ACheckpoint_OnOverlapBegin, "OnOverlapBegin" }, // 4280669765
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACheckpoint_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -252,9 +246,9 @@ void EmptyLinkFunctionForGeneratedCodeCheckpoint() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CPP_Source_CPP_Checkpoint_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ACheckpoint, ACheckpoint::StaticClass, TEXT("ACheckpoint"), &Z_Registration_Info_UClass_ACheckpoint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACheckpoint), 3339660703U) },
+		{ Z_Construct_UClass_ACheckpoint, ACheckpoint::StaticClass, TEXT("ACheckpoint"), &Z_Registration_Info_UClass_ACheckpoint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACheckpoint), 3025102097U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CPP_Source_CPP_Checkpoint_h_308836015(TEXT("/Script/CPP"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_CPP_Source_CPP_Checkpoint_h_2465035374(TEXT("/Script/CPP"),
 		Z_CompiledInDeferFile_FID_CPP_Source_CPP_Checkpoint_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_CPP_Source_CPP_Checkpoint_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

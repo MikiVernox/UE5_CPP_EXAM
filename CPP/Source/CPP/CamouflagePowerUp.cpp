@@ -14,15 +14,15 @@ ACamouflagePowerUp::ACamouflagePowerUp()
     // Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
     PrimaryActorTick.bCanEverTick = true;
 
-    // Initialize the collision component
+    
     CollisionComponent = CreateDefaultSubobject<UBoxComponent>(TEXT("CollisionComponent"));
     RootComponent = CollisionComponent;
     CollisionComponent->SetCollisionProfileName(TEXT("Trigger"));
     CollisionComponent->OnComponentBeginOverlap.AddDynamic(this, &ACamouflagePowerUp::OnOverlapBegin);
 
-    // Set default values
+    
     CamouflageDuration = 10.0f;
-    CamouflageMaterial = nullptr; // Assign your camouflage material here
+    CamouflageMaterial = nullptr; 
 }
 
 // Called when the game starts or when spawned

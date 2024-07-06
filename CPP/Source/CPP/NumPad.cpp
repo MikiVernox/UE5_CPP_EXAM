@@ -68,25 +68,25 @@ void ANumPad::HideNumpadUI()
 void ANumPad::EnterCode(const FString& Code)
 {
 	EnteredCode = Code;
-	UE_LOG(LogTemp, Warning, TEXT("Entered Code: %s"), *EnteredCode); // Debug message
-	UE_LOG(LogTemp, Warning, TEXT("Correct Code: %s"), *CorrectCode); // Debug message
+	UE_LOG(LogTemp, Warning, TEXT("Entered Code: %s"), *EnteredCode); 
+	UE_LOG(LogTemp, Warning, TEXT("Correct Code: %s"), *CorrectCode); 
 
 	if (EnteredCode == CorrectCode)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Correct Code Entered!"));
 
-		// Open the door if the code is correct
+		
 		if (Door)
 		{
 			Door->OpenDoor();
-			UE_LOG(LogTemp, Warning, TEXT("Door Opened")); // Debug message
+			UE_LOG(LogTemp, Warning, TEXT("Door Opened")); 
 		}
 		else
 		{
-			UE_LOG(LogTemp, Error, TEXT("Door reference is not set!")); // Debug message
+			UE_LOG(LogTemp, Error, TEXT("Door reference is not set!")); 
 		}
 
-		// Hide the Numpad UI after entering the correct code
+		
 		HideNumpadUI();
 	}
 	else

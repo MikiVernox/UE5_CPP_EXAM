@@ -50,7 +50,7 @@ void AObstacle::AllowPassage(AActor* Character)
         if (MyCharacter->IsCamouflaged())
         {
             ObstacleMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-            //ObstacleMesh->SetVisibility(false);
+          
         }
     }
     

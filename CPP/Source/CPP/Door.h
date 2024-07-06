@@ -23,10 +23,10 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	// Function to open the door
+	
 	void OpenDoor();
 
-	// Function to close the door
+	
 	void CloseDoor();
 
 private:

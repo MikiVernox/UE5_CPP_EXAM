@@ -46,7 +46,7 @@ public:
 
 	
 
-	// New components for camera
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
 	class USpringArmComponent* CameraBoom;
 
@@ -61,15 +61,15 @@ public:
 
 	virtual void OnCollected() override;
 
-	// Function to set the last checkpoint location
+	
 	void SetLastCheckpointLocation(FVector NewCheckpointLocation);
 
-	// Function to respawn the character
+	
 	void RespawnAtCheckpoint();
 
 private:
 
-	// Array to store the original materials
+	
 	TArray<UMaterialInterface*> OriginalMaterials;
 
 	bool bCamouflaged;

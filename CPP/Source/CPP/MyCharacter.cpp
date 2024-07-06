@@ -23,13 +23,13 @@ AMyCharacter::AMyCharacter()
     SprintMultiplier = 2.0f;
     bIsFiring = false;
 
-    // Create a camera boom (pulls in towards the player if there is a collision)
+    
     CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
     CameraBoom->SetupAttachment(RootComponent);
     CameraBoom->TargetArmLength = 300.0f; 
     CameraBoom->bUsePawnControlRotation = true; 
 
-    // Create a follow camera
+   
     FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
     FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); 
     FollowCamera->bUsePawnControlRotation = false; 
@@ -46,7 +46,7 @@ void AMyCharacter::BeginPlay()
 {
     Super::BeginPlay();
 
-    // Store the original materials of the mesh
+    
     int32 NumMaterials = GetMesh()->GetNumMaterials();
     for (int32 i = 0; i < NumMaterials; ++i)
     {
@@ -143,7 +143,7 @@ void AMyCharacter::EquipWeapon(class ABattleRifle* Weapon)
         Weapon->AttachToComponent(GetMesh(), AttachmentRules, TEXT("WeaponSocket"));
         Weapon->SetOwner(this);
         Weapon->SetActorHiddenInGame(false);
-        Weapon->SetActorEnableCollision(false); // Disable collision once equipped
+        Weapon->SetActorEnableCollision(false); 
         
     }
 }
@@ -167,7 +167,7 @@ void AMyCharacter::BurstFire()
 {
     if (!bIsFiring) return;
 
-    // Implement raycast logic here for each burst shot
+   
     FHitResult Hit;
     FVector Start = FollowCamera->GetComponentLocation();
     FVector ForwardVector = FollowCamera->GetForwardVector();
@@ -199,11 +199,11 @@ void AMyCharacter::SetCamouflaged(bool bIsCamouflaged, UMaterialInterface* NewMa
     {
         if (!bCamouflaged)
         {
-            OriginalMaterial = GetMesh()->GetMaterial(0); // Store original material
-            GetMesh()->SetMaterial(0, NewMaterial); // Set camouflage material
+            OriginalMaterial = GetMesh()->GetMaterial(0); 
+            GetMesh()->SetMaterial(0, NewMaterial); 
             bCamouflaged = true;
 
-            // Timer to reset camouflage
+           
             GetWorld()->GetTimerManager().SetTimer(CamouflageTimerHandle, this, &AMyCharacter::ResetCamouflage, Duration, false);
         }
     }

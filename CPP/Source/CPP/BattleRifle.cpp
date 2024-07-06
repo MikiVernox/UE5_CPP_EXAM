@@ -13,7 +13,7 @@ ABattleRifle::ABattleRifle()
 
     MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent"));
     RootComponent = MeshComponent;
-    MeshComponent->SetVisibility(true); // Ensure mesh is visible
+    MeshComponent->SetVisibility(true);
 
     CollisionComponent = CreateDefaultSubobject<USphereComponent>(TEXT("CollisionComponent"));
     CollisionComponent->SetupAttachment(RootComponent);
@@ -24,7 +24,7 @@ ABattleRifle::ABattleRifle()
 void ABattleRifle::BeginPlay()
 {
     Super::BeginPlay();
-    MeshComponent->SetVisibility(true); // Ensure mesh is visible
+    MeshComponent->SetVisibility(true); 
 }
 
 void ABattleRifle::Tick(float DeltaTime)
@@ -39,13 +39,13 @@ void ABattleRifle::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* O
         AMyCharacter* MyCharacter = Cast<AMyCharacter>(OtherActor);
         if (MyCharacter)
         {
-            //UE_LOG(LogTemp, Warning, TEXT("Weapon Overlapped with Character"));
+            
             MyCharacter->EquipWeapon(this);
             
             
             SetActorHiddenInGame(true);
             SetActorEnableCollision(false);
-            //SetLifeSpan(5.0f); // Destroy the actor after 5 seconds
+            
             Destroy();
         }
     }

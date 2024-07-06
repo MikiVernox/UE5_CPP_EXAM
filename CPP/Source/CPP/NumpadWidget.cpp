@@ -18,22 +18,6 @@ void UNumpadWidget::NativeConstruct()
     UpdateCodeDisplay();
 }
 
-//void UNumpadWidget::BindButtonEvents()
-//{
-//    for (int32 i = 1; i <= 9; i++)
-//    {
-//        FString ButtonName = FString::Printf(TEXT("Button_%d"), i);
-//        if (UButton* Button = Cast<UButton>(GetWidgetFromName(FName(*ButtonName))))
-//        {
-//            UE_LOG(LogTemp, Warning, TEXT("Button %s found and event bound"), *ButtonName);
-//            Button->OnClicked.AddUniqueDynamic(this, &UNumpadWidget::OnButtonClicked);
-//        }
-//        else
-//        {
-//            UE_LOG(LogTemp, Warning, TEXT("Button %s not found"), *ButtonName);
-//        }
-//    }
-//}
 
 void UNumpadWidget::BindButtonEvents()
 {
@@ -75,57 +59,7 @@ void UNumpadWidget::OnButtonDelClicked()
     }
 }
 
-//void UNumpadWidget::OnButtonClicked()
-//{
-//
-//    UE_LOG(LogTemp, Warning, TEXT("OnButtonClicked called"));
-//    // Find the button that was clicked
-//    for (int32 i = 1; i <= 9; i++)
-//    {
-//        FString ButtonName = FString::Printf(TEXT("Button_%d"), i);
-//        if (UButton* Button = Cast<UButton>(GetWidgetFromName(FName(*ButtonName))))
-//        {
-//            if (Button->IsPressed())
-//            {
-//                LastClickedButton = Button;
-//                break;
-//            }
-//        }
-//    }
-//
-//    if (LastClickedButton)
-//    {
-//        FString ButtonName = LastClickedButton->GetName();
-//        FString ButtonNumber = ButtonName.Right(1);
-//        EnteredCode.Append(ButtonNumber);
-//
-//        UE_LOG(LogTemp, Warning, TEXT("Entered Code: %s"), *EnteredCode);
-//
-//        if (OwnerNumPad)
-//        {
-//            OwnerNumPad->EnterCode(EnteredCode);
-//        }
-//    }
-//}
 
-//void UNumpadWidget::OnButtonClicked()
-//{
-//    UE_LOG(LogTemp, Warning, TEXT("OnButtonClicked called"));
-//    
-//    if (ClickedButton)
-//    {
-//        FString ButtonName = ClickedButton->GetName();
-//        FString ButtonNumber = ButtonName.Right(1);
-//        EnteredCode.Append(ButtonNumber);
-//
-//        UE_LOG(LogTemp, Warning, TEXT("Entered Code: %s"), *EnteredCode);
-//
-//        if (OwnerNumPad)
-//        {
-//            OwnerNumPad->EnterCode(EnteredCode);
-//        }
-//    }
-//}
 
 void UNumpadWidget::HandleButtonClick(FString ButtonNumber)
 {

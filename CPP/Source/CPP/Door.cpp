@@ -34,8 +34,8 @@ void ADoor::OpenDoor()
 {
     if (!bIsOpen)
     {
-        // Implement door opening logic (e.g., changing location or rotation)
-        DoorMesh->SetRelativeLocation(FVector(0.f, 0.f, 200.f)); // Example: move door up
+        
+        DoorMesh->SetRelativeLocation(FVector(0.f, 0.f, 200.f)); 
         bIsOpen = true;
     }
 }
@@ -44,8 +44,8 @@ void ADoor::CloseDoor()
 {
     if (bIsOpen)
     {
-        // Implement door closing logic (e.g., changing location or rotation)
-        DoorMesh->SetRelativeLocation(FVector(0.f, 0.f, 0.f)); // Example: move door down
+        
+        DoorMesh->SetRelativeLocation(FVector(0.f, 0.f, 0.f)); 
         bIsOpen = false;
     }
 }
